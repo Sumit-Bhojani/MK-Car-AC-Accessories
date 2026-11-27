@@ -1,0 +1,26 @@
+{
+  "name": "mk-car-ac-and-accessories",
+  "version": "1.0.0",
+  "description": "Full-stack website for MK CAR AC & ACCESSORIES (React + Node.js)",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,cyan\" \"npm run server\" \"npm run client\"",
+    "start": "node server/server.js",
+    "server": "node --watch server/server.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "i": "npm run install:all",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "car-ac",
+    "garage",
+    "workshop",
+    "accessories",
+    "ahmedabad"
+  ],
+  "author": "MK CAR AC & ACCESSORIES",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
